@@ -9,17 +9,22 @@
   "author": "Nikolaus Piccolotto <prayerslayer@gmail.com>",
   "license": "Apache 2.0",
   "dependencies": {
-    "autoprefixer": "^6.1.0",
+    "autoprefixer": "^5.2.0",
     "aws-sdk": "^2.2.15",
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
     "express-autoprefixer": "^4.0.3",
+    "express-session": "^1.12.1",
     "jade": "^1.11.0",
     "less-middleware": "^2.0.1",
+    "passport": "^0.3.0",
+    "passport-oauth2": "^1.1.2",
     "pg": "^4.4.3",
+    "postcss": "^4.1.16",
     "shelljs": "^0.5.3",
     "sqlt": "^1.1.1",
     "superagent": "^1.4.0",
+    "uuid": "^2.0.1",
     "winston": "^2.1.0"
   }
 }

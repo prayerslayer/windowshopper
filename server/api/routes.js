@@ -1,4 +1,4 @@
-var TOKENINFO_URL = process.env.TOKENINFO_URL,
+var TOKENINFO_URL = process.env.OAUTH_TOKENINFO_URL,
     winston = require('winston'),
     api = require('./core'),
     util = require('../util'),
