@@ -13,7 +13,8 @@ Lazy UI discovery for STUPS infrastructure.
 ## Caveats
 
 * Won't find UIs secured on network level, e.g. security groups, firewalls...
-* Does not find UIs living in non-root path
+* Does not find UIs living in non-root path. This could be tackled together with tintwip, where we would look for unsecured endpoints with text/html response.
+* Does not follow redirects prior to deciding whether to take a screenshot or not
 
 ## Todo
 

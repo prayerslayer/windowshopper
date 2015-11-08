@@ -9,6 +9,7 @@
   "author": "Nikolaus Piccolotto <prayerslayer@gmail.com>",
   "license": "Apache 2.0",
   "dependencies": {
+    "autoprefixer": "^6.1.0",
     "aws-sdk": "^2.2.15",
     "body-parser": "^1.14.1",
     "express": "^4.13.3",

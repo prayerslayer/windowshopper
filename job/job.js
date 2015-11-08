@@ -5,7 +5,7 @@ var shell = require('shelljs'),
     aws = require('aws-sdk'),
     sqlt = require('sqlt'),
     fs = require('fs'),
-    db = sqlt.dir('db'),
+    db = sqlt.dir('../db'),
     KIO_URL = process.env.KIO_URL,
     DB_URL = process.env.DB_URL,
     S3_BUCKET = process.env.S3_BUCKET,
@@ -92,7 +92,7 @@ function saveScreenshot(app) {
         }
         // we lose ASCII art UIs here, but well...
         if (/text\/html/.test(res.headers['content-type'])) {
-            shell.exec('./node_modules/phantomjs2/bin/phantomjs save.js ' + id + ' ' + url);
+            shell.exec('../node_modules/phantomjs2/bin/phantomjs save.js ' + id + ' ' + url);
             winston.info('Downloaded', id);
             persistImages(id, url);
         } else {
