@@ -3,11 +3,14 @@ html
     title= "Windowshopper"
     link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700', rel='stylesheet' type='text/css')
     link(rel="stylesheet", href="/styles/index.css")
-  body
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js")
+    script(src="/js/index.js")
+  body(class="index")
     h1= "Window shopper"
+    input(class="search", placeholder="Type your search" type="search", data-block="search-field")
     ul(class="uis")
       each ui in uis
-        li(class="ui")
+        li(class="ui", data-block="ui", data-id=ui.id)
           h2= ui.id
           a(href=ui.url)
             img(src=ui.image_url)

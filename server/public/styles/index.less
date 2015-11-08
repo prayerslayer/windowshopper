@@ -19,6 +19,23 @@ h6 {
 
 body {
     max-width: 100%;
+    &.index {
+        max-width: 1400px;
+        padding: .5em;
+        margin: 0 auto;
+    }
+}
+
+.search {
+    font-size: 24px;
+    width: 100%;
+    font-family: inherit;
+    line-height: 2em;
+    padding: 0.25em 0.5em;
+    appearance: none;
+    border: none;
+    outline: 1px solid #aaa;
+    margin-bottom: 1em;
 }
 
 .uis {
@@ -28,7 +45,7 @@ body {
     column-fill: auto;
     list-style-type: none;
     margin: 0 auto;
-    max-width: 1400px;
+    padding: 0;
 
     .ui {
         break-inside: avoid-column;

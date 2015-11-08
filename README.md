@@ -14,9 +14,8 @@ Lazy UI discovery for STUPS infrastructure.
 
 * Won't find UIs secured on network level, e.g. security groups, firewalls...
 * Does not find UIs living in non-root path. This could be tackled together with tintwip, where we would look for unsecured endpoints with text/html response.
-* Does not follow redirects prior to deciding whether to take a screenshot or not
+* Self signed certificates?
 
 ## Todo
 
-* Search
-* Make configurable header navigation or a "favorite" section
+* Ability to "fav" UIs
