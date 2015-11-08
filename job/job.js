@@ -87,11 +87,11 @@ function saveScreenshot(app) {
     .get(url)
     .end((err, res) => {
         if (err) {
-            winston.info('Could not read', url);
+            winston.error('Could not read', url, err);
             return;
         }
         // we lose ASCII art UIs here, but well...
-        if (/text\/html/.test(res.headers['content-type'])) {
+        if (res.ok && /text\/html/.test(res.headers['content-type'])) {
             shell.exec('../node_modules/phantomjs2/bin/phantomjs save.js ' + id + ' ' + url);
             winston.info('Downloaded', id);
             persistImages(id, url);
